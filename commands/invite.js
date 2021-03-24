@@ -21,10 +21,7 @@ module.exports = {
 
 ${EMOJI_ARROW}  **Invite me with Admin Perms [(Click Here)](https://discord.com/api/oauth2/authorize?client_id=${BOT_ID}&permissions=8&scope=bot)**
 `
-
-      
-      
-        
+          
       )
       .setURL(
         `${SERVER_INVITE}`
