@@ -13,20 +13,20 @@ client.prefix = PREFIX;
 client.queue = new Map();
 const cooldowns = new Collection();
 const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-const {BOT_PREFIX, BOT_STATUS2, BOT_STATUS3 , BOT_PRESENCE } = require('./config.json');
+const {BOT_PREFIX, BOT_PRESENCE } = require('./config.json');
 
 /**
  * Client Events
  */
 client.on("ready", () => {
    function randomStatus() {
- let status = [`${BOT_STATUS2}`,`${BOT_STATUS3}`, `${BOT_PREFIX}play ON ${client.guilds.cache.size} Servers`]
+ let status = [`24/7 LIVE MUSIC`,`$$help`]
 let rstatus = Math.floor(Math.random() * status.length);
 
 client.user.setActivity(status[rstatus], {type: `${BOT_PRESENCE}` });
-}; setInterval(randomStatus, 30000)
+}; setInterval(randomStatus, 30)
 
-console.log('Bot is ready to play songs !')
+console.log(`${client.user.username} ready!`);
 })
 client.on("warn", (info) => console.log(info));
 client.on("error", console.error);
@@ -87,4 +87,3 @@ client.on("message", async (message) => {
     message.reply("There was an error executing that command.").catch(console.error);
   }
 });
-
