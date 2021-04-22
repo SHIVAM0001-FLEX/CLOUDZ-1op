@@ -6,7 +6,7 @@ module.exports = {
     description: "submit a bug",
     async execute(message, args) {
 
-        const fbChannel = "833542764666290188";
+        const fbChannel = "834324983135469636";
 
         const fb = args.join(" ");
         if(!fb){
@@ -14,13 +14,13 @@ module.exports = {
         }
 
         const embed = new MessageEmbed()
-            .setTitle("Cloudz Music Bug Report :right:")
+            .setTitle("Cloudz Music Bug Report <a:right:833265255886356510>")
             .addField(`Author`, `\`${message.author.tag}\``)
-            .addField(`Feedback`, "\`"+fb+"\`")
+            .addField(`Bug`, "\`"+fb+"\`")
             .addField(`Member Id`, `\`${message.author.id}\``)
             .addField(`On the Server`, `\`${message.guild.name}\``)
             .addField("Server ID:", `\`${message.guild.id}\``)
-            .setColor("RED")
+            .setColor("#FF0000")
             .setTimestamp()
                     
         message.client.channels.cache.get(fbChannel).send(embed).then((msg) =>{
@@ -28,17 +28,3 @@ module.exports = {
             throw err;
         });
 
-
-        const successembed = new MessageEmbed()
-        .addField("Join Our Support Server", `Click Here To Join Our [Support Server](https://discord.gg/5w7wgYCjwa)`)
-        .setTitle("Success!")
-        .setColor("RED")
-        .setDescription(`:right: Your **Bug** is submitted successfully!`)
-
-        message.author.send(successembed)
-    }
-
-}
-
-
-console.log("Feedback cmd working")
