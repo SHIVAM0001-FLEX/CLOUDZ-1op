@@ -1,8 +1,6 @@
-
-
 {
-  "TOKEN": "ODIyMjk0NTY5MjIzNDU0NzQ***************",
-  "YOUTUBE_API_KEY": "AIzaSyDKw************w",
+  "TOKEN": "ODI1MjQ1MDM0NDQ5OTkzNzQ4.YF7HVA.",
+  "YOUTUBE_API_KEY": "AIzaSyDKwp9wW2sbyChfK_elgYmoZ09qhn7d07w",
 
 
   "EMOJI_ARROW": "<a:arrows:830975224845565952>",
@@ -10,15 +8,13 @@
   "EMOJI_ERROR": "<a:wrong:833366149785845790>",
   "EMOJI_STARTED_PLAYING": "<a:NG_26:833930149581029376>",
   "EMOJI_LINE":"<a:line:833931097427279904>",
-  "EMOJI_DONE": ":right:"
-
 
   "BOT_ID": "822294569223454740",
   "BOT_OWNER_ID": "764546128204005436",
-  "SERVER_INVITE": "https://discord.gg/kDKtrxWZ",
+  "SERVER_INVITE": "https://discord.gg/5kHAgNvB2c",
 
-  "PREFIX": "++",
-  "BOT_PREFIX": "++",
+  "PREFIX": "$$",
+  "BOT_PREFIX": "$$",
 
 
   "BOT_STATUS2":"24/7 MUSIC",
@@ -32,6 +28,3 @@
   "STAY_TIME": 30,
   "DEFAULT_VOLUME": 100
 }
-
-
-     
