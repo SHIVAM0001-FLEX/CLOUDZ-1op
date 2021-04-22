@@ -11,9 +11,9 @@ module.exports = {
 
       let helpEmbed = new MessageEmbed()
       .setAuthor(`Command List`, `${message.client.user.avatarURL()}`)
-      .setColor("#00ffff")
+      .setColor("FF0000")
       .setDescription(`\`All Commands Of\` **${message.client.user.username}**\n\n${commands}`)
-      .addField(`**Links**`, `**[Support Server](https://discord.gg/2UTZvZS3ma)** • **[Invite Me](https://discord.com/oauth2/authorize?client_id=824574998101884960&scope=bot&permissions=3435585)** `)
+      .addField(`**Links**`, `**[Support Server](https://discord.gg/RbTQ2Z5hkR)** • **[Invite Me](https://discord.com/api/oauth2/authorize?client_id=822294569223454740&permissions=8&scope=bot)** `)
 
       message.channel.send(helpEmbed)
     } else {
@@ -23,7 +23,7 @@ module.exports = {
 
       const advhelp = new MessageEmbed()
       .setAuthor(`Help Panel`, `${message.client.user.avatarURL()}`)
-      .setColor("RED")
+      .setColor("#FF0000")
       .setDescription(`Name: ${command.name}\nDescription: ${command.description}\nAliases: ${command.aliases.length < 1 ? 'None' : command.aliases.join(', ')}`)
 
       message.channel.send(advhelp)
