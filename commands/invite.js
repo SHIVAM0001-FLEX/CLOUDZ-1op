@@ -26,7 +26,7 @@ ${EMOJI_ARROW}  **Invite me with Admin Perms [(Click Here)](https://discord.com/
       .setURL(
         `${SERVER_INVITE}`
       )
-      .setColor("RANDOM");
+      .setColor("#FF0000");
     return message.channel.send(invite);
   }
 };
