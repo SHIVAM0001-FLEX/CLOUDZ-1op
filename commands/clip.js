@@ -31,14 +31,3 @@ module.exports = {
         })
         .on("error", err => {
           message.client.queue.delete(message.guild.id);
-          // channel.leave();
-          console.error(err);
-        });
-    } catch (error) {
-      console.error(error);
-    }
-  }
-};
-
-
-console.log("Clip working")
